@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btnUpdate = new Button();
             dateTimePicker1 = new DateTimePicker();
             pictureBox1 = new PictureBox();
@@ -81,6 +82,7 @@
             Controls.Add(btnUpdate);
             Controls.Add(dateTimePicker1);
             Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(1634, 960);
             MinimumSize = new Size(1634, 960);
             Name = "Form1";
